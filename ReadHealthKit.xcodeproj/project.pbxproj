@@ -37,6 +37,7 @@
 		17B5CA59027A633B64E2811A /* DataStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreManager.m; sourceTree = "<group>"; };
 		17B5CA6AA860F929F4CCC986 /* ReadHealthKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = file.entitlements; path = ReadHealthKit.entitlements; sourceTree = "<group>"; };
 		17B5CE1BB2F3513021F04090 /* HealthDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthDataTableViewController.h; sourceTree = "<group>"; };
+		17B5CE5226182EB42801CAEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		51F18987687A40A4941A8507 /* libPods-ReadHealthKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReadHealthKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadHealthKit.xcconfig"; path = "Pods/Pods-ReadHealthKit.xcconfig"; sourceTree = "<group>"; };
 		730ECA96196CD097008F09E7 /* ReadHealthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadHealthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +81,7 @@
 				730ECA97196CD097008F09E7 /* Products */,
 				5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */,
 				891F1309021245668A58FD49 /* Frameworks */,
+				17B5CE5226182EB42801CAEE /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
