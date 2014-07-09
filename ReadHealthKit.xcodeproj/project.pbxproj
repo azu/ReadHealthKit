@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1064EC4B7E064BD9AEFD8CC6 /* libPods-ReadHealthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F18987687A40A4941A8507 /* libPods-ReadHealthKit.a */; };
+		17B5CB117FCDA10B293D7F96 /* HealthDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C94DC88D28BAE7281AC3 /* HealthDataTableViewController.m */; };
+		17B5CC55C2D4719B332A1B2F /* DataStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CA59027A633B64E2811A /* DataStoreManager.m */; };
+		17B5CCE170F233D3EC3D3FD4 /* HealthDataTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FF132EAE6B950C6DD9 /* HealthDataTableViewModel.m */; };
 		730ECA9C196CD097008F09E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 730ECA9B196CD097008F09E7 /* main.m */; };
 		730ECA9F196CD097008F09E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 730ECA9E196CD097008F09E7 /* AppDelegate.m */; };
-		730ECAA2196CD097008F09E7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 730ECAA1196CD097008F09E7 /* MasterViewController.m */; };
-		730ECAA5196CD097008F09E7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 730ECAA4196CD097008F09E7 /* DetailViewController.m */; };
 		730ECAA8196CD097008F09E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730ECAA6196CD097008F09E7 /* Main.storyboard */; };
 		730ECAAA196CD097008F09E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730ECAA9196CD097008F09E7 /* Images.xcassets */; };
 		730ECAB6196CD097008F09E7 /* ReadHealthKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 730ECAB5196CD097008F09E7 /* ReadHealthKitTests.m */; };
+		730ECAC5196CD867008F09E7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730ECAC4196CD867008F09E7 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,20 +30,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B5C02B432A2014E1ECE59C /* DataStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStoreManager.h; sourceTree = "<group>"; };
+		17B5C2772760B9A68D1DB33F /* HealthDataTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthDataTableViewModel.h; sourceTree = "<group>"; };
+		17B5C5FF132EAE6B950C6DD9 /* HealthDataTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthDataTableViewModel.m; sourceTree = "<group>"; };
+		17B5C94DC88D28BAE7281AC3 /* HealthDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthDataTableViewController.m; sourceTree = "<group>"; };
+		17B5CA59027A633B64E2811A /* DataStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreManager.m; sourceTree = "<group>"; };
+		17B5CA6AA860F929F4CCC986 /* ReadHealthKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = file.entitlements; path = ReadHealthKit.entitlements; sourceTree = "<group>"; };
+		17B5CE1BB2F3513021F04090 /* HealthDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthDataTableViewController.h; sourceTree = "<group>"; };
+		51F18987687A40A4941A8507 /* libPods-ReadHealthKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReadHealthKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadHealthKit.xcconfig"; path = "Pods/Pods-ReadHealthKit.xcconfig"; sourceTree = "<group>"; };
 		730ECA96196CD097008F09E7 /* ReadHealthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadHealthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		730ECA9A196CD097008F09E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		730ECA9B196CD097008F09E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		730ECA9D196CD097008F09E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		730ECA9E196CD097008F09E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		730ECAA0196CD097008F09E7 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		730ECAA1196CD097008F09E7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		730ECAA3196CD097008F09E7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		730ECAA4196CD097008F09E7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		730ECAA7196CD097008F09E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		730ECAA9196CD097008F09E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		730ECAAF196CD097008F09E7 /* ReadHealthKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadHealthKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		730ECAB4196CD097008F09E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		730ECAB5196CD097008F09E7 /* ReadHealthKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadHealthKitTests.m; sourceTree = "<group>"; };
+		730ECAC4196CD867008F09E7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1064EC4B7E064BD9AEFD8CC6 /* libPods-ReadHealthKit.a in Frameworks */,
+				730ECAC5196CD867008F09E7 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +78,8 @@
 				730ECA98196CD097008F09E7 /* ReadHealthKit */,
 				730ECAB2196CD097008F09E7 /* ReadHealthKitTests */,
 				730ECA97196CD097008F09E7 /* Products */,
+				5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */,
+				891F1309021245668A58FD49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,13 +97,15 @@
 			children = (
 				730ECA9D196CD097008F09E7 /* AppDelegate.h */,
 				730ECA9E196CD097008F09E7 /* AppDelegate.m */,
-				730ECAA0196CD097008F09E7 /* MasterViewController.h */,
-				730ECAA1196CD097008F09E7 /* MasterViewController.m */,
-				730ECAA3196CD097008F09E7 /* DetailViewController.h */,
-				730ECAA4196CD097008F09E7 /* DetailViewController.m */,
 				730ECAA6196CD097008F09E7 /* Main.storyboard */,
 				730ECAA9196CD097008F09E7 /* Images.xcassets */,
 				730ECA99196CD097008F09E7 /* Supporting Files */,
+				17B5C94DC88D28BAE7281AC3 /* HealthDataTableViewController.m */,
+				17B5CE1BB2F3513021F04090 /* HealthDataTableViewController.h */,
+				17B5C5FF132EAE6B950C6DD9 /* HealthDataTableViewModel.m */,
+				17B5C2772760B9A68D1DB33F /* HealthDataTableViewModel.h */,
+				17B5C02B432A2014E1ECE59C /* DataStoreManager.h */,
+				17B5CA59027A633B64E2811A /* DataStoreManager.m */,
 			);
 			path = ReadHealthKit;
 			sourceTree = "<group>";
@@ -109,6 +124,7 @@
 			children = (
 				730ECAB5196CD097008F09E7 /* ReadHealthKitTests.m */,
 				730ECAB3196CD097008F09E7 /* Supporting Files */,
+				17B5CA6AA860F929F4CCC986 /* ReadHealthKit.entitlements */,
 			);
 			path = ReadHealthKitTests;
 			sourceTree = "<group>";
@@ -121,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		891F1309021245668A58FD49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				730ECAC4196CD867008F09E7 /* HealthKit.framework */,
+				51F18987687A40A4941A8507 /* libPods-ReadHealthKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 730ECAB9196CD097008F09E7 /* Build configuration list for PBXNativeTarget "ReadHealthKit" */;
 			buildPhases = (
+				E0F6A38C1C7242B4980808AF /* Check Pods Manifest.lock */,
 				730ECA92196CD097008F09E7 /* Sources */,
 				730ECA93196CD097008F09E7 /* Frameworks */,
 				730ECA94196CD097008F09E7 /* Resources */,
+				A58394A2EA604228B863CC48 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,12 @@
 				TargetAttributes = {
 					730ECA95196CD097008F09E7 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 667RSF8RJ3;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					730ECAAE196CD097008F09E7 = {
 						CreatedOnToolsVersion = 6.0;
@@ -215,15 +248,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A58394A2EA604228B863CC48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ReadHealthKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F6A38C1C7242B4980808AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		730ECA92196CD097008F09E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				730ECA9F196CD097008F09E7 /* AppDelegate.m in Sources */,
-				730ECAA2196CD097008F09E7 /* MasterViewController.m in Sources */,
 				730ECA9C196CD097008F09E7 /* main.m in Sources */,
-				730ECAA5196CD097008F09E7 /* DetailViewController.m in Sources */,
+				17B5CB117FCDA10B293D7F96 /* HealthDataTableViewController.m in Sources */,
+				17B5CCE170F233D3EC3D3FD4 /* HealthDataTableViewModel.m in Sources */,
+				17B5CC55C2D4719B332A1B2F /* DataStoreManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,23 +402,35 @@
 		};
 		730ECABA196CD097008F09E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = ReadHealthKitTests/ReadHealthKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ReadHealthKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
 		730ECABB196CD097008F09E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = ReadHealthKitTests/ReadHealthKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ReadHealthKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};
@@ -408,6 +487,7 @@
 				730ECABB196CD097008F09E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		730ECABC196CD097008F09E7 /* Build configuration list for PBXNativeTarget "ReadHealthKitTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +496,7 @@
 				730ECABE196CD097008F09E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
