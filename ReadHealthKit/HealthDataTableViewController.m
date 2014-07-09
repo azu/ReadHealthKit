@@ -45,8 +45,8 @@
 }
 
 - (void)updateCell:(UITableViewCell *) cell atIndexPath:(NSIndexPath *) path {
-    cell.textLabel.text = [self.model heightTextAtIndexPath:path];
-    cell.detailTextLabel.text = [self.model dateTextAtIndexPath:path];
+    cell.textLabel.text = [self.model dateTextAtIndexPath:path];
+    cell.detailTextLabel.text = [self.model heightTextAtIndexPath:path];
 }
 
 - (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath {
