@@ -21,4 +21,8 @@
 - (PMKPromise *)writeSample:(HKQuantitySample *)sample;
 
 - (PMKPromise *)fetchAllSampleForType:(HKQuantityType *) quantityType;
+
+- (PMKPromise *)statisticsForType:(HKQuantityType *) quantityType predicate:(NSPredicate *) predicate options:(enum HKStatisticsOptions) options;
+
+- (PMKPromise *)collection:(HKQuantityType *) quantityType predicate:(NSPredicate *) predicate options:(HKStatisticsOptions) options date:(NSDate *) date components:(NSDateComponents *) components;
 @end

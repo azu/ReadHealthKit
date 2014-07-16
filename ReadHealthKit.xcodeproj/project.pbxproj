@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1064EC4B7E064BD9AEFD8CC6 /* libPods-ReadHealthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F18987687A40A4941A8507 /* libPods-ReadHealthKit.a */; };
+		17B5C6F4D0DA8AE1E96D01E2 /* StatisticsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CF3A32DD7DCC2EE3E4D8 /* StatisticsViewModel.m */; };
 		17B5CB117FCDA10B293D7F96 /* HealthDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C94DC88D28BAE7281AC3 /* HealthDataTableViewController.m */; };
 		17B5CC55C2D4719B332A1B2F /* DataStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CA59027A633B64E2811A /* DataStoreManager.m */; };
 		17B5CCE170F233D3EC3D3FD4 /* HealthDataTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FF132EAE6B950C6DD9 /* HealthDataTableViewModel.m */; };
@@ -17,6 +18,7 @@
 		730ECAAA196CD097008F09E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730ECAA9196CD097008F09E7 /* Images.xcassets */; };
 		730ECAB6196CD097008F09E7 /* ReadHealthKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 730ECAB5196CD097008F09E7 /* ReadHealthKitTests.m */; };
 		730ECAC5196CD867008F09E7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730ECAC4196CD867008F09E7 /* HealthKit.framework */; };
+		73F2AE7C19749E4000E2F2FA /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F2AE7B19749E4000E2F2FA /* StatisticsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,9 @@
 		17B5CA59027A633B64E2811A /* DataStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreManager.m; sourceTree = "<group>"; };
 		17B5CA6AA860F929F4CCC986 /* ReadHealthKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = file.entitlements; path = ReadHealthKit.entitlements; sourceTree = "<group>"; };
 		17B5CE1BB2F3513021F04090 /* HealthDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthDataTableViewController.h; sourceTree = "<group>"; };
+		17B5CE375DC10C28F6BBB6B2 /* StatisticsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewModel.h; sourceTree = "<group>"; };
 		17B5CE5226182EB42801CAEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+		17B5CF3A32DD7DCC2EE3E4D8 /* StatisticsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewModel.m; sourceTree = "<group>"; };
 		51F18987687A40A4941A8507 /* libPods-ReadHealthKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReadHealthKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5520B19D7A9A4E6EA45C440A /* Pods-ReadHealthKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadHealthKit.xcconfig"; path = "Pods/Pods-ReadHealthKit.xcconfig"; sourceTree = "<group>"; };
 		730ECA96196CD097008F09E7 /* ReadHealthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadHealthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +55,8 @@
 		730ECAB4196CD097008F09E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		730ECAB5196CD097008F09E7 /* ReadHealthKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadHealthKitTests.m; sourceTree = "<group>"; };
 		730ECAC4196CD867008F09E7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		73F2AE7A19749E4000E2F2FA /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisticsViewController.h; path = Statistics/StatisticsViewController.h; sourceTree = "<group>"; };
+		73F2AE7B19749E4000E2F2FA /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsViewController.m; path = Statistics/StatisticsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		730ECA98196CD097008F09E7 /* ReadHealthKit */ = {
 			isa = PBXGroup;
 			children = (
+				73F2AE7919749E1600E2F2FA /* Statistics */,
 				730ECA9D196CD097008F09E7 /* AppDelegate.h */,
 				730ECA9E196CD097008F09E7 /* AppDelegate.m */,
 				730ECAA6196CD097008F09E7 /* Main.storyboard */,
@@ -137,6 +144,17 @@
 				730ECAB4196CD097008F09E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73F2AE7919749E1600E2F2FA /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				73F2AE7A19749E4000E2F2FA /* StatisticsViewController.h */,
+				73F2AE7B19749E4000E2F2FA /* StatisticsViewController.m */,
+				17B5CF3A32DD7DCC2EE3E4D8 /* StatisticsViewModel.m */,
+				17B5CE375DC10C28F6BBB6B2 /* StatisticsViewModel.h */,
+			);
+			name = Statistics;
 			sourceTree = "<group>";
 		};
 		891F1309021245668A58FD49 /* Frameworks */ = {
@@ -291,8 +309,10 @@
 				730ECA9F196CD097008F09E7 /* AppDelegate.m in Sources */,
 				730ECA9C196CD097008F09E7 /* main.m in Sources */,
 				17B5CB117FCDA10B293D7F96 /* HealthDataTableViewController.m in Sources */,
+				73F2AE7C19749E4000E2F2FA /* StatisticsViewController.m in Sources */,
 				17B5CCE170F233D3EC3D3FD4 /* HealthDataTableViewModel.m in Sources */,
 				17B5CC55C2D4719B332A1B2F /* DataStoreManager.m in Sources */,
+				17B5C6F4D0DA8AE1E96D01E2 /* StatisticsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

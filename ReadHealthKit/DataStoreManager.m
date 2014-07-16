@@ -43,7 +43,6 @@
 }
 
 - (PMKPromise *)authorizationStatusForType:(HKQuantityType *) quantityType {
-    NSSet *dataTypes = [NSSet setWithObject:quantityType];
     // authorization for write
     return [PMKPromise new:^(PMKPromiseFulfiller fulfiller, PMKPromiseRejecter rejecter) {
         HKAuthorizationStatus status = [self.healthStore authorizationStatusForType:quantityType];
@@ -82,6 +81,31 @@
             }
         }];
         [self.healthStore executeQuery:sampleQuery];
+    }];
+}
+
+// then : HKStatistics
+- (PMKPromise *)statisticsForType:(HKQuantityType *) quantityType predicate:(NSPredicate *) predicate options:(enum HKStatisticsOptions) options {
+    return [PMKPromise new:^(PMKPromiseFulfiller fulfiller, PMKPromiseRejecter rejecter) {
+        HKStatisticsQuery *statisticsQuery = [[HKStatisticsQuery alloc] initWithQuantityType:quantityType quantitySamplePredicate:predicate options:options completionHandler:^(HKStatisticsQuery *query, HKStatistics *result, NSError *error) {
+            if (!error) {
+                fulfiller(result);
+            } else {
+                rejecter(error);
+            }
+        }];
+        [self.healthStore executeQuery:statisticsQuery];
+
+    }];
+}
+
+- (PMKPromise *)collection:(HKQuantityType *) quantityType predicate:(NSPredicate *) predicate options:(HKStatisticsOptions) options date:(NSDate *) date components:(NSDateComponents *) components {
+    return [PMKPromise new:^(PMKPromiseFulfiller fulfiller, PMKPromiseRejecter rejecter) {
+        HKStatisticsCollectionQuery *collectionQuery = [[HKStatisticsCollectionQuery alloc] initWithQuantityType:quantityType quantitySamplePredicate:predicate options:options anchorDate:date intervalComponents:components];
+        collectionQuery.initialResultsHandler = ^(HKStatisticsCollectionQuery *query, HKStatisticsCollection *result, NSError *error) {
+            NSLog(@"result = %@", result);
+        };
+        [self.healthStore executeQuery:collectionQuery];
     }];
 }
 

@@ -40,6 +40,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="x6U-jP-UCt">
+                        <barButtonItem key="leftBarButtonItem" title="Statistics" id="IOT-GD-ry1">
+                            <connections>
+                                <segue destination="TZY-gN-ifi" kind="show" id="V2x-6h-WnU"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6IO-Vk-cKv">
                             <connections>
                                 <action selector="handleReloadButton:" destination="4lY-y6-u1w" id="IB3-53-pXI"/>
@@ -50,6 +55,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSU-zI-6Di" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="344"/>
+        </scene>
+        <!--Statistics View Controller-->
+        <scene sceneID="cVb-Er-9A7">
+            <objects>
+                <viewController storyboardIdentifier="StatisticsViewController" id="TZY-gN-ifi" customClass="StatisticsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NJY-h6-ihQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JGK-5y-Cnp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8LV-1x-YVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最高値" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFL-9O-9Gr">
+                                <rect key="frame" x="111" y="119" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBV-OY-nPf">
+                                <rect key="frame" x="170" y="95" width="141" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="maxLabel" destination="SBV-OY-nPf" id="kpP-mb-8SL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bke-Or-IPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QRu-ZN-gcV">
