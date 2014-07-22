@@ -7,6 +7,13 @@ Example project of HealthKit
 * Read Height data from HealthKit
 * Write Height data by [azu/WriteHealthKit](https://github.com/azu/WriteHealthKit "azu/WriteHealthKit").
 
+A Series of HealthKit Demo.
+
+* [azu/ReadHealthKit](https://github.com/azu/ReadHealthKit "azu/ReadHealthKit")
+* [azu/WriteHealthKit](https://github.com/azu/WriteHealthKit "azu/WriteHealthKit")
+* [azu/StatisticsHealthKit](https://github.com/azu/StatisticsHealthKit "azu/StatisticsHealthKit")
+
+
 ## Installation
 
 ```sh
